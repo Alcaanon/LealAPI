@@ -16,7 +16,7 @@ export class ClientController {
   @Get('listar')
   async findAll() {
     const users = await this.prisma.getClient().user.findMany();
-    this.log('Usuários listados: ');
+    this.log('Clientes listados: ');
     this.log(JSON.stringify(users));
     return users;
   }
