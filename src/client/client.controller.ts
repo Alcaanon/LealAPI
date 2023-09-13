@@ -26,7 +26,7 @@ export class ClientController {
     nome: string;
     email: string;
     telefone: string;
-    furos: number;
+    furos: string;
     local: string;
     joias: string;
     alergia: boolean;
@@ -90,7 +90,7 @@ export class ClientController {
 //         nome: string;
 //         email: string;
 //         telefone: string;
-//         furos: number;
+//         furos: string;
 //         local: string;
 //         joias: string;
 //         alergia: boolean;

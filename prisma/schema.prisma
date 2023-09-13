@@ -12,7 +12,7 @@ model User {
     nome                    String
     email                   String
     telefone                String
-    furos                   Int
+    furos                   String
     local                   String
     joias                   String
     alergia                 Boolean     @default(false)
