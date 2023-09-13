@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+    id                      Int         @id @default(autoincrement())
+    nome                    String
+    email                   String
+    telefone                String
+    furos                   Int
+    local                   String
+    joias                   String
+    alergia                 Boolean     @default(false)
+    alergias                String
+    medicamento             Boolean     @default(false) 
+    medicamentos            String
+    hepatite                Boolean     @default(false)
+    hepatites               String
+    coagulacao              Boolean     @default(false)
+    diabetes                Boolean     @default(false)
+    cardiacas               Boolean     @default(false)
+    hemofilia               Boolean     @default(false)
+    convulsao               Boolean     @default(false)
+    queloide                Boolean     @default(false)
+    cicatrizacao            Boolean     @default(false)
+    assinatura              String
+    createdAt               DateTime    @default(now())
+    updatedAt               DateTime    @updatedAt
+    
+}
